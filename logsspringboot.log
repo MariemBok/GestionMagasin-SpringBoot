@@ -1,0 +1,10 @@
+2021-11-10 12:28:10.580  INFO 11808 --- [main] t.e.s.TestSpringEntitiesApplication      : Starting TestSpringEntitiesApplication on LAPTOP-1TN0RB6O with PID 11808 (C:\Users\bokri\Esprit\Spring\test-spring-entities\target\classes started by bokri in C:\Users\bokri\Esprit\Spring\test-spring-entities)
+2021-11-10 12:28:10.582  INFO 11808 --- [main] t.e.s.TestSpringEntitiesApplication      : No active profile set, falling back to default profiles: default
+2021-11-10 12:28:10.601  INFO 11808 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ec756bd: startup date [Wed Nov 10 12:28:10 WAT 2021]; root of context hierarchy
+2021-11-10 12:28:11.096  INFO 11808 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-11-10 12:28:11.097  INFO 11808 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-11-10 12:28:11.099  INFO 11808 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-11-10 12:28:11.110  INFO 11808 --- [main] t.e.s.TestSpringEntitiesApplication      : Started TestSpringEntitiesApplication in 0.727 seconds (JVM running for 1.419)
+2021-11-10 12:28:11.114  INFO 11808 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@ec756bd: startup date [Wed Nov 10 12:28:10 WAT 2021]; root of context hierarchy
+2021-11-10 12:28:11.116  INFO 11808 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-11-10 12:28:11.117  INFO 11808 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
