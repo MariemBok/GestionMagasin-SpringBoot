@@ -21,7 +21,7 @@ public class DetailProduit implements Serializable{
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY )
     @Column(name="IdDetailProduit")
-    int id;
+    Long id;
     @Temporal(TemporalType.DATE)
     @Column(name="dateCreation")
     Date datecr;
