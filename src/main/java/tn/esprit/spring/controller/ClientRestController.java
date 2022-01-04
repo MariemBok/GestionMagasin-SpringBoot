@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.spring.entity.CategorieClient;
 import tn.esprit.spring.entity.Client;
-import tn.esprit.spring.service.ClientService;
+import tn.esprit.spring.service.client.ClientService;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package tn.esprit.spring.service;
+package tn.esprit.spring.service.client;
 
 import tn.esprit.spring.entity.CategorieClient;
 import tn.esprit.spring.entity.Client;

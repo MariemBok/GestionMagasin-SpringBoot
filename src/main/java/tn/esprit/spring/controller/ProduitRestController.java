@@ -3,7 +3,7 @@ package tn.esprit.spring.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.spring.entity.*;
-import tn.esprit.spring.service.ProduitService;
+import tn.esprit.spring.service.produit.ProduitService;
 
 import java.util.List;
 

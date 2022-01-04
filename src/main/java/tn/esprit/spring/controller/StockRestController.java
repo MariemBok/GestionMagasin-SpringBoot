@@ -3,7 +3,7 @@ package tn.esprit.spring.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.spring.entity.Stock;
-import tn.esprit.spring.service.StockService;
+import tn.esprit.spring.service.stock.StockService;
 
 import java.util.List;
 

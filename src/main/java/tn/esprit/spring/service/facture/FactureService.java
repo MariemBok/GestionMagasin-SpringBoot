@@ -1,4 +1,4 @@
-package tn.esprit.spring.service;
+package tn.esprit.spring.service.facture;
 
 import tn.esprit.spring.entity.Facture;
 

@@ -1,4 +1,4 @@
-package tn.esprit.spring.service;
+package tn.esprit.spring.service.stock;
 
 import tn.esprit.spring.entity.Stock;
 
@@ -11,4 +11,5 @@ public interface StockService {
     Stock updateStock(Stock s);
     Stock retrieveStock(Long id);
     void deleteStock(Long StockID);
+
 }

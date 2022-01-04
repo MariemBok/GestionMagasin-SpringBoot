@@ -3,7 +3,7 @@ package tn.esprit.spring.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.spring.entity.Facture;
-import tn.esprit.spring.service.FactureService;
+import tn.esprit.spring.service.facture.FactureService;
 
 import java.util.List;
 
@@ -39,10 +39,10 @@ public class FactureRestController {
 
     //http://localhost:8081/SpringMVC/facture/cancel-facture/8
 
-    @PutMapping("/cancel-facture/{facture-id}")
+    @PutMapping ("/cancel-facture/{facture-id}")
     @ResponseBody
-    public void CancelFacture(@PathVariable("facture-id") Long FactureId){
-        factureService.cancelFacture(FactureId);
+    public void CancelFacture(@PathVariable("facture-id") Long id){
+        factureService.cancelFacture(id);
     }
 
     //http://localhost:8081/SpringMVC/facture/add-facture/8

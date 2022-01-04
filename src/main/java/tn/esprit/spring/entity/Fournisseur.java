@@ -19,7 +19,7 @@ public class Fournisseur implements Serializable{
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY )
     @Column(name="IdFournisseur")
-    int id;
+    Long id;
     @Column(name="Code")
     String code;
     @Column(name="Libelle")

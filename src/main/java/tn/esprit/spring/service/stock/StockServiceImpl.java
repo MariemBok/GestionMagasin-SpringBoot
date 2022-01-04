@@ -1,14 +1,14 @@
-package tn.esprit.spring.service;
+package tn.esprit.spring.service.stock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tn.esprit.spring.entity.Stock;
 import tn.esprit.spring.repository.StockRepository;
+import tn.esprit.spring.service.stock.StockService;
 
 import java.util.List;
-import java.util.Set;
 
 @Service
-public class StockServiceImpl implements StockService{
+public class StockServiceImpl implements StockService {
     @Autowired
     StockRepository stockRepository;
 
@@ -22,8 +22,8 @@ public class StockServiceImpl implements StockService{
      }
 
      public Stock updateStock(Stock s){
-        stockRepository.save(s);
-        return s;
+
+        return stockRepository.save(s);
      }
 
      public Stock retrieveStock(Long id){

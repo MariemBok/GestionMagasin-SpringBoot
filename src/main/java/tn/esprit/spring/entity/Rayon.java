@@ -16,7 +16,7 @@ public class Rayon implements Serializable{
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY )
     @Column(name="IdRayon")
-    int id;
+    Long id;
     @Column(name="Code")
     String code;
     @Column(name="Libelle")

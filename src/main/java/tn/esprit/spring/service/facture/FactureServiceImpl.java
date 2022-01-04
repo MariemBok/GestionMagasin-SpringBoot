@@ -1,4 +1,4 @@
-package tn.esprit.spring.service;
+package tn.esprit.spring.service.facture;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -6,11 +6,12 @@ import tn.esprit.spring.entity.Client;
 import tn.esprit.spring.entity.Facture;
 import tn.esprit.spring.repository.ClientRepository;
 import tn.esprit.spring.repository.FactureRepository;
+import tn.esprit.spring.service.facture.FactureService;
 
 import java.util.List;
 
 @Service
-public class FactureServiceImpl implements FactureService{
+public class FactureServiceImpl implements FactureService {
 
     @Autowired
     FactureRepository factureRepository;
@@ -23,8 +24,9 @@ public class FactureServiceImpl implements FactureService{
     }
 
     public void cancelFacture(Long id){
-        Facture f= factureRepository.findFactureById(id);
+        Facture f=factureRepository.findFactureById(id);
         f.setActive(false);
+        factureRepository.save(f);
     }
 
     public Facture retrieveFacture(Long id){

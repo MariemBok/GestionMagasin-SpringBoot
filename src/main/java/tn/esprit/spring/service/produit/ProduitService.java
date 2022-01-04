@@ -1,4 +1,4 @@
-package tn.esprit.spring.service;
+package tn.esprit.spring.service.produit;
 
 import tn.esprit.spring.entity.DetailProduit;
 import tn.esprit.spring.entity.Produit;
