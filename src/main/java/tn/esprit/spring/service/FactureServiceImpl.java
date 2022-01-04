@@ -2,7 +2,9 @@ package tn.esprit.spring.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import tn.esprit.spring.entity.Client;
 import tn.esprit.spring.entity.Facture;
+import tn.esprit.spring.repository.ClientRepository;
 import tn.esprit.spring.repository.FactureRepository;
 
 import java.util.List;
@@ -12,6 +14,9 @@ public class FactureServiceImpl implements FactureService{
 
     @Autowired
     FactureRepository factureRepository;
+
+    @Autowired
+    ClientRepository clientRepository;
 
     public List<Facture> retrieveAllFactures(){
         return factureRepository.findAll();
@@ -26,4 +31,14 @@ public class FactureServiceImpl implements FactureService{
         return factureRepository.findFactureById(id);
     }
 
+    public List<Facture> getFacturesByClient(Long idClient){
+        return factureRepository.findFactureByClient(idClient);
+    }
+
+    @Override
+    public Facture addFacture(Facture f, Long idClient) {
+        Client client= clientRepository.findClientById(idClient);
+        f.setClient(client);
+        return factureRepository.save(f);
+    }
 }

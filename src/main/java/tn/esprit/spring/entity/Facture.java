@@ -1,4 +1,5 @@
 package tn.esprit.spring.entity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,6 +29,7 @@ public class Facture implements Serializable{
     Date datefact;
     @Column(name="Active")
     Boolean active;
+    @JsonIgnore
     @OneToMany(mappedBy = "facture")
     private Set<DetailFacture> detailFactureSet;
     @ManyToOne
