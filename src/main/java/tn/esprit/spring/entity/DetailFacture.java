@@ -17,7 +17,7 @@ public class DetailFacture  implements Serializable{
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY )
     @Column(name="IdDetailFacture")
-    int id;
+    Long id;
     @Column(name="Qte")
     Integer qte;
     @Column(name="prixTotal")
