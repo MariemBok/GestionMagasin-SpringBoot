@@ -1,5 +1,6 @@
 package tn.esprit.spring.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -35,6 +36,7 @@ public class Client implements Serializable{
     @Enumerated(EnumType.STRING)
     @Column(name="profession")
     Profession profession;
+    @JsonIgnore
     @OneToMany(mappedBy = "client")
     private Set<Facture> factureSet;
 
