@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import tn.esprit.spring.entity.DetailFacture;
 import tn.esprit.spring.repository.DetailFactureRepository;
 
+import java.util.List;
+
 @Service
 public class DetailFactureServiceImpl implements DetailFactureService{
 
@@ -20,4 +22,9 @@ public class DetailFactureServiceImpl implements DetailFactureService{
     public void deleteDetailFacture(Long id){
         detailFactureRepository.deleteById(id);
     }
+
+    public List<DetailFacture> retrieveAllDetailFacture(){
+        return (List<DetailFacture>) detailFactureRepository.findAll();
+    }
+
 }
